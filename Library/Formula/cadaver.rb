@@ -12,7 +12,7 @@ class Cadaver < Formula
   def install
     system "./configure", "--prefix=#{prefix}",
                           "--with-included-neon",
-                          "--with-ssl"
+                          "--with-ssl=openssl"
     cd 'lib/intl' do
       system "make"
     end
